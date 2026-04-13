@@ -1,0 +1,182 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+  background: #f5f7fa;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+
+aside {
+  width: 260px;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+aside div:first-child {
+  padding: 24px;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* Sidebar buttons */
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+aside nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+aside nav button:hover {
+  background: #1e293b;
+}
+
+aside div:last-child {
+  margin-top: auto;
+  padding: 16px;
+  border-top: 1px solid #1e293b;
+  font-size: 14px;
+}
+
+/* Main area */
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+
+header {
+  height: 70px;
+  background: white;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+}
+
+header img {
+  height: 32px;
+}
+
+/* Cards section */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* Button */
+
+.counter-btn {
+  margin-top: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.counter-btn:hover {
+  background: #1e40af;
+}
+
+/* Quick Start Panel */
+
+.quick-panel {
+  padding: 25px;
+}
+
+.quick-panel-box {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quick-panel img {
+  width: 160px;
+}
+
+/* Resources */
+
+.resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 25px;
+}
+
+.resource-box {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+}
+
+.resource-box ul {
+  margin-top: 10px;
+}
+
+.resource-box li {
+  margin-top: 8px;
+}
+
+.resource-box a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.resource-box a:hover {
+  text-decoration: underline;
+}
